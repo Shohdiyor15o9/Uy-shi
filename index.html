@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                container: {
+                    center: true,
+                },
+                fontFamily: {
+                    'san': 'sans-serif'
+                },
+                extend: {
+                    colors: {
+                        'knopka': '#274C5B',
+                        'text': '#525C60',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header class="container my-10">
+        <div class="container relative w-[1380px] h-[320px] flex flex-row justify-between">
+            <img class="absolute object-cover -z-10" src="/photo/apelsin.png" alt="">
+            <div class="flex items-center ml-10">
+                <h1 class="text-4xl font-semibold text-white">Subscribe Our <br>Newsletter</h1>
+            </div>
+            <div class="flex flex-row items-center mr-10 gap-5">
+                <input class="w-[350px] h-[80px] rounded-2xl" type="email" id="email"
+                    placeholder="enter your email address">
+                <label for="email">
+                    <button>
+                        <img src="/photo/knopka.png" alt="">
+                    </button>
+                </label>
+            </div>
+        </div>
+    </header>
+    <section class="container my-10 flex flex-row justify-around">
+        <div class="fex flex-col text-end justify-self-end w-[270px]">
+            <h2 class="text-2xl font-semibold">Contact Us</h2>
+            <div class="mb-5">
+                <span class="font-semibold">Email</span>
+                <p>needhelp@organick.com</p>
+            </div>
+            <div class="mb-5">
+                <span class="font-semibold">Phone</span>
+                <p>123 (1254) 1452</p>
+            </div>
+            <div class="mb-5">
+                <span class="font-semibold">Address</span>
+                <p>88 Road, Brooklyn Street, USA</p>
+            </div>
+        </div>
+        <div class="fex flex-col text-center justify-center w-[670px]">
+            <img class="mx-auto" src="/photo/organik.png" alt="">
+            <p class="ml-16 w-[555px]">We are a popular and farming company aspiring to be a leader in the Organic food industry.</p>
+            <div class="flex flex-row ml-48">
+                <a class="mr-5" href="https://www.instagram.com/"><img src="/photo/insta.png" alt=""></a>
+                <a class="mr-5" href="https://www.facebook.com"><img src="/photo/face.png" alt=""></a>
+                <a class="mr-5" href="httmp://ru.pinterest.com"><img src="/photo/pin.png" alt=""></a>
+                <a class="mr-5" href="https://www.twitter.com"><img src="/photo/twit.png" alt=""></a>
+            </div>
+        </div>
+        <div class="fex flex-col text-start justify-end w-[340px]">
+            <ul>
+                <li class="font-semibold mb-5">Utility Pages</li>
+                <li class="mb-5">Styl guide</li>
+                <li class="mb-5">Protected</li>
+                <li class="mb-5">Page not found</li>
+                <li class="mb-5">Changelog</li>
+                <li class="mb-5">Licensec</li>
+            </ul>
+        </div>
+    </section>
+    <footer class="container">
+        <hr>
+        <p class="text-center my-10">Copyright © Organick | Designed by
+            VictorFlow
+            - Powered by
+            Webflow</p>
+    </footer>
+</body>
+
+</html>
